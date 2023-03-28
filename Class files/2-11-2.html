@@ -18,7 +18,51 @@
 			<!-- Practice area start -->
 
 			<h1>Your Order</h1>
-
+			<form action="#">
+				<div class="row">
+					<label for="name">Name</label> 
+					<input type="text" name="name" id="name">
+					<label for="email">Email</label> 
+					<input type="email" name="email" id="email">
+				</div>
+				<div class="row">
+					<label for="name">Address</label> <br>
+					<input type="text" name="addl1" id="addl1">
+					<input type="text" name="addl2" id="addl2">
+				</div>
+				<div class="row">
+					<label for="city">City</label> 
+					<input type="text" name="city" id="city">
+					<label for="state">State</label> 
+					<input type="state" name="state" id="state">
+					<label for="zip">Zip</label> 
+					<input type="text" name="zip" id="zip">
+				</div>
+				<div class="row">
+					<p>What color samples should we send you ?</p>
+					<input type="checkbox" name="list" id="list" disabled value="white"> White
+					<input type="checkbox" name="list" id="list" value="magenta"> Magenta
+					<input type="checkbox" name="list" id="list" value="corel"> Corel
+					<input type="checkbox" name="list" id="list" value="burgundy"> Burgundy
+					<input type="checkbox" name="list" id="list" value="charcoal"> Charcoal
+				</div>
+				<div class="row">
+					<p>What size of your team ?</p>
+					<input type="radio" name="size" id="size" disabled value="small"> 1-5 People
+					<input type="radio" name="size" id="size" value="medium"> 6-20 People
+					<input type="radio" name="size" id="size" value="large"> 20+ People
+				</div>
+				<div class="row">
+					<label for="comments">Comments</label> <br>
+					<textarea name="comments" id="commets" cols="30" rows="10"></textarea>
+				</div>
+				<div class="row">
+					<input type="checkbox" name="special" id="special" value="true"> Sign Up for Special Offers
+					<button type="submit">
+						Place Order
+					</button>
+				</div>
+			</form>
 
 
 			<!-- Practice area end -->

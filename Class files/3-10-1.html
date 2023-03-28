@@ -1,47 +1,169 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>HTML and CSS for Complete Beginners: Example 3-10-1</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+	<title>HTML and CSS for Complete Beginners: Example 3-10-1</title>
 
-		<style>
-			* {
-				box-sizing: border-box;
-			}
+	<!-- This CSS and font is purely for presentational purposes. -->
+	<link rel="stylesheet" href="css/presentation.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
 
-			body {
-				font-family: 'Poppins', sans-serif;
-			}
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-			form div {
-				margin-bottom: 1rem;
-			}
+		body {
+			font-family: 'Poppins', sans-serif;
+		}
 
-			form .btn {
-				background-color: #7C48BF;
-				color: white;
-				padding: 1rem 2rem;
-				border-radius: 8px;
-				font-weight: bold;
-				text-align: center;
-				text-decoration: none;
-				width: 100%;
-			}
-		</style>
-	</head>
+		.learn {
+			background-color: #f4f5f5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-	<body>
-		<section class="learn">
-			<!-- Practice area start -->
+		.learn .container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #ffff;
+			padding: 3rem;
+			/* width: 500px; */
 
+		}
+
+		.learn .container h1 {
+			font-size: 2rem;
+			width: 350px;
+			font-weight: 800;
+			padding-bottom: 2rem;
+		}
+
+		.learn .container form {
+			display: flex;
+			flex-direction: column;
+			width: 350px;
+		}
+
+		form div {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 1rem;
+			/* min-width: 400px; */
+		}
+
+		.learn .container form div label {
+			text-transform: uppercase;
+			font-weight: 600;
+			padding-bottom: 0.4rem;
+		}
+
+		.learn .container form div input {
+			outline: none;
+			background-color: #f3f4f5;
+			border: none;
+			padding: 1.2rem 1.2rem;
+			border-radius: 8px;
+			font-size: 1.2rem;
+			color: #4b5c69;
+		}
+
+		form .btn {
+			background-color: #7C48BF;
+			color: white;
+			padding: 1rem 2rem;
+			border-radius: 8px;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			width: 100%;
+		}
+
+		#check-remember {
+			padding-top: 1.4rem;
+		}
+
+
+
+		#check-remember label {
+			font-size: 1rem;
+		}
+
+		#check-remember.check {
+			display: block;
+			position: relative;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			cursor: pointer;
+		}
+
+		#check-remember label input {
+			margin-right: 1rem;
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+		}
+
+		#check-remember label .checkmark {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			width: 25px;
+			height: 25px;
+			border: 2px solid #405461;
+			border-radius: 3px;
+		}
+
+		.check:hover input~.checkmark {
+			background-color: #ccc;
+		}
+
+		.checkmark::after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+
+		.check input:checked~.checkmark::after {
+			display: block;
+		}
+
+		.check .checkmark:after {
+			left: 7px;
+			top: 3px;
+			width: 5px;
+			height: 10px;
+			border: solid #405461;
+			border-width: 0 3px 3px 0;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+
+		#rem {
+			margin-left: 40px;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="learn">
+		<!-- Practice area start -->
+
+		<div class="container">
 			<h1>Sign in with your credentials</h1>
 
 			<form action="" method="post">
@@ -56,8 +178,10 @@
 				</div>
 
 				<div id="check-remember">
-					<label for="remember-me">
-						<input type="checkbox" name="remember-me" id="remember-me"> Remember me
+					<label for="remember-me" class="check">
+						<input type="checkbox" name="remember-me" id="remember-me">
+						<span class="checkmark"></span>
+						<span id="rem">Remember me</span>
 					</label>
 				</div>
 
@@ -65,12 +189,15 @@
 
 				<a href="" class="btn">Sign In</a>
 			</form>
+		</div>
 
-			<!-- Practice area end -->
-		</section>
 
-		<section class="preview" data-content="lesson 3-10: Using the Display Property in CSS">
-			<img width="498px" src="images/reference/login-form.png" alt="Reference image" />
-		</section>
-	</body>
+		<!-- Practice area end -->
+	</section>
+
+	<section class="preview" data-content="lesson 3-10: Using the Display Property in CSS">
+		<img width="498px" src="images/reference/login-form.png" alt="Reference image" />
+	</section>
+</body>
+
 </html>

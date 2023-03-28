@@ -1,27 +1,86 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>HTML and CSS for Complete Beginners: Example 3-3-2</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+	<title>HTML and CSS for Complete Beginners: Example 3-3-2</title>
 
-		<style>
-			* {
-				box-sizing: border-box;
-			}
-		</style>
-	</head>
-	<body>
-		<section class="learn">
-			<!-- Practice area start -->
+	<!-- This CSS and font is purely for presentational purposes. -->
+	<link rel="stylesheet" href="css/presentation.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
 
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Poppins", sans-serif;
+		}
+
+		.learn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #f4f5f5;
+			padding: 10%;
+		}
+
+		.learn .container{
+			background-color: #ffff;
+			padding: 7%;
+			color: #132a3b;
+			width: 100%;
+			height: 100%;
+			border-radius: 0.5rem;
+			box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
+		}
+
+		.learn .container h1{
+			padding-bottom: 6%;
+			font-weight: 800;
+		}
+
+		.learn .container form div{
+			padding-bottom: 1.3rem;
+		}
+
+		.learn .container form div label{
+			display: block;
+			font-size: 0.7rem;
+			font-weight: 600;
+			padding-bottom: 0.3rem;
+		}
+
+		.learn .container form div input{
+			display: block;
+			width: 100%;
+			padding: 0.5rem 1rem;
+			outline: none;
+			border: 0.5px solid #d1d6d9;
+			border-radius: 3px;
+		}
+
+		.learn .container form button{
+			padding: 0.7rem 1.2rem;
+			background-color: #039b92;
+			border: none;
+			color: #ffff;
+			font-size: 0.7rem;
+			font-weight: 600;
+			border-radius: 2px;
+			margin-top: 1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="learn">
+		<!-- Practice area start -->
+		<div class="container">
 			<h1>Register a New Account</h1>
 
 			<form action="" method="post">
@@ -47,12 +106,14 @@
 
 				<button>Register Account</button>
 			</form>
+		</div>
 
-			<!-- Practice area end -->
-		</section>
+		<!-- Practice area end -->
+	</section>
 
-		<section class="preview" data-content="lesson 3-3: Using CSS Selectors">
-			<img width="704px" src="images/reference/register-form.png" alt="Reference image" />
-		</section>
-	</body>
+	<section class="preview" data-content="lesson 3-3: Using CSS Selectors">
+		<img width="704px" src="images/reference/register-form.png" alt="Reference image" />
+	</section>
+</body>
+
 </html>

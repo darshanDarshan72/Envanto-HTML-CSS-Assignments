@@ -1,54 +1,111 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>HTML and CSS for Complete Beginners: Example 3-3-1</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+	<title>HTML and CSS for Complete Beginners: Example 3-3-1</title>
 
-		<style>
+	<!-- This CSS and font is purely for presentational purposes. -->
+	<link rel="stylesheet" href="css/presentation.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
 
-		</style>
-	</head>
-	<body>
-		<section class="learn">
-			<!-- Practice area start -->
+	<style>
 
+		.learn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* width: 100%; */
+			/* border: 1px solid black; */
+			padding: 0;
+
+		}
+
+		.learn .container {
+			background-color: #f7f8f8;
+			width: 100%;
+			height: 100%;
+			padding: 10% 20%;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			gap: 7%;
+
+		}
+		.learn .container .card {
+			display: flex;
+			background-color: #132a3b;
+			color: #fff;
+			font-family: "Poppins", sans-serif;
+			border-radius: 10px;
+			padding: 0px 30px;
+		}
+
+		.learn .container .card .content{
+			padding: 24px;
+			padding-left: 30px;
+		}
+
+		.learn .container .card .content h2
+		{
+			font-size: 2rem;
+			margin: 0;
+			padding: 0;
+		}
+
+		.learn .container .card .content p{
+			font-size: 1rem;
+			margin: 0;
+			padding: 0;
+		}
+
+		#sale{
+			background-color: #1f5475;
+		}
+
+		#rental{
+			background-color: #f66a11;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="learn">
+		<!-- Practice area start -->
+		<div class="container">
 			<div class="card" id="total">
 				<img src="images/example/house-chimney.svg" alt="Icon">
-				<div>
-					<h1>510</h1>
+				<div class="content">
+					<h2>510</h2>
 					<p>Properties in total</p>
 				</div>
 			</div>
-
 			<div class="card" id="sale">
 				<img src="images/example/cart-plus.svg" alt="Icon">
-				<div>
-					<h1>253</h1>
+				<div class="content">
+					<h2>253</h2>
 					<p>Properties for sale</p>
 				</div>
 			</div>
-
 			<div class="card" id="rental">
 				<img src="images/example/user-check.svg" alt="Icon">
-				<div>
-					<h1>257</h1>
+				<div class="content">
+					<h2>257</h2>
 					<p>Properties for rental</p>
 				</div>
 			</div>
-
 			<!-- Practice area end -->
-		</section>
+		</div>
+	</section>
 
-		<section class="preview" data-content="lesson 3-3: Using CSS Selectors">
-			<img width="414px" src="images/reference/real-estate-statistics.png" alt="Reference image" />
-		</section>
-	</body>
+
+	<section class="preview" data-content="lesson 3-3: Using CSS Selectors">
+		<img width="414px" src="images/reference/real-estate-statistics.png" alt="Reference image" />
+	</section>
+</body>
+
 </html>

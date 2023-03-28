@@ -14,47 +14,98 @@
 
 		<style>
 			* {
+				margin: 0;
+				padding: 0;
+				font-family: "Poppins",sans-serif;
 				box-sizing: border-box;
+
 			}
 
+			.learn{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #f4f5f5;
+				padding: 10% 18%;
+			}
+
+			.learn .container{
+				width: 100%;
+				height: 100%;
+				background-color: #ffff;
+				padding: 15% 15%;
+				border-radius: 0.5rem;
+				box-shadow: 4px 4px 20px rgba(139, 139, 139, 0.3);
+			}
 			.card {
 				color: rgb(20, 41, 58);
+				height: 100%;
+				width: 100%;
 			}
 
-			.card p {
+			.card img{
+				padding-bottom: 1.5rem;
+			}
+
+			.learn .container .card h1{
+				font-size: 1.8rem;
+				font-weight: 900;
+				padding-bottom: 2rem;
+			}
+
+			.learn .container .card p {
 				color:rgba(20, 41, 58, 0.8);
+				font-size: 1.2rem;
+				padding-bottom: 2rem;
+				font-weight: 400;
 			}
 
+			.learn .container .card .contact p{
+				padding-bottom: 0;
+				padding-top: 2rem;
+			}
+			.learn .container .card .contact p span{
+				font-size: 1rem;
+				text-transform: uppercase;
+				font-weight: 600;
+				/* padding-bottom: 0; */
+
+			}
 			.card a {
 				color: #FF5D00;
+				text-decoration: none;
+				font-size: 1.1rem;
 			}
 		</style>
 	</head>
 	<body>
 		<section class="learn">
 			<!-- Practice area start -->
-
-			<div class="card">
-				<img src="images/example/envelopes-bulk.svg" alt="envelopes-bulk">
-
-				<h1>Let's get in touch</h1>
-
-				<p>
-					9 Augusta Street<br>
-					Fair Lawn, NJ 07410
-				</p>
-
-				<hr>
-
-				<p>
-					<span>email</span><br>
-					<a href="#">chuck@roundhouse.com</a><br>
-				</p>
-
-				<p>
-					<span>phone</span><br>
-					<a href="#">+1-202-555-0125</a>
-				</p>
+			<div class="container">
+				<div class="card">
+					<img src="images/example/envelopes-bulk.svg" alt="envelopes-bulk">
+	
+					<h1>Let's get in touch</h1>
+	
+					<p>
+						9 Augusta Street<br>
+						Fair Lawn, NJ 07410
+					</p>
+	
+					<hr>
+					
+					<div class="contact">
+						<p>
+							<span>email</span><br>
+							<a href="#">chuck@roundhouse.com</a><br>
+						</p>
+		
+						<p>
+							<span>phone</span><br>
+							<a href="#">+1-202-555-0125</a>
+						</p>
+					</div>
+				</div>
 			</div>
 
 			<!-- Practice area end -->
