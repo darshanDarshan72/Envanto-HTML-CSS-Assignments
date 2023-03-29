@@ -1,24 +1,115 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>HTML and CSS for Complete Beginners: Example 2-10</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
-	</head>
+	<title>HTML and CSS for Complete Beginners: Example 2-10</title>
 
-	<body>
-		<section class="learn">
-			<!-- Practice area start -->
+	<!-- This CSS and font is purely for presentational purposes. -->
+	<link rel="stylesheet" href="css/presentation.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Poppins", sans-serif;
+		}
+
+		.learn {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: #f4f5f5;
+		}
+
+		.container {
+			background-color: #fff;
+			width: 450px;
+			padding: 3rem;
+			box-shadow: 4px 4px 20px rgba(139, 139, 139, 0.3);
+			position: relative;
+		}
+
+		.container h1 {
+			font-size: 2rem;
+			font-weight: 800;
+			color: #132a3b;
+			/* margin-bottom: 1.4rem; */
+		}
+
+		.container h2 {
+			font-size: 1.3rem;
+			font-weight: 700;
+			color: #132a3b;
+			/* margin-bottom: 1.4rem; */
+		}
+
+		img#banner {
+			/* width: 100%; */
+			width: 450px;
+		}
+
+		.container div ul{
+			padding-top: 2.3rem;
+			padding-left: 2rem;
+			padding-bottom: 1rem;
+			color: #425562;
+		}
+
+		.container div#steps{
+			background-color: #f9f7f4;
+			padding: 1.4rem;
+			border-radius: 0.3rem;
+		}
+
+		.container div#steps h2{
+			padding-bottom: 1rem;
+		}
+
+		.container div#steps ol{
+			padding-top: 1rem;
+			padding-left: 2.4rem;
+		}
+
+		.container a{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			border: 4px solid #c0477a;
+			padding: 1rem 1rem;
+			border-radius: 2rem;
+			text-decoration: none;
+			font-size: 1rem;
+			font-weight: 600;
+			color: #c0477a;
+			margin-top: 2rem;
+		}
+
+		.container a img{
+			margin-right: 1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="learn">
+		<!-- Practice area start -->
+		<div class="container">
 
 			<h1>Classic cheesecake</h1>
+		</div>
 
+		<img src="./images/example/cheesecake.jpg" id="banner" alt="">
+
+		<div class="container">
 			<div>
 				<h2>Ingredients</h2>
 				<ul>
@@ -29,7 +120,9 @@
 					<li>3 eggs</li>
 				</ul>
 
-				<div>
+
+
+				<div id="steps">
 					<h2>Steps</h2>
 					<ol>
 						<li>Mix the ingredients</li>
@@ -42,12 +135,14 @@
 				<a href=""> <img src="./images/example/bookmark.svg" alt=""> Save this recipe</a>
 				<!-- <a href=""><img src="images/example/bookmark.png" alt="Bookmark icon" width="200px">Save this recipe</a> -->
 			</div>
+		</div>
 
-			<!-- Practice area end -->
-		</section>
+		<!-- Practice area end -->
+	</section>
 
-		<section class="preview" data-content="lesson 2-10: Working with Images">
-			<img width="560px" src="images/reference/recipe.png" alt="Reference image" />
-		</section>
-	</body>
+	<section class="preview" data-content="lesson 2-10: Working with Images">
+		<img width="560px" src="images/reference/recipe.png" alt="Reference image" />
+	</section>
+</body>
+
 </html>
