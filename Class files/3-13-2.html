@@ -24,15 +24,25 @@
 
 			.learn {
 				padding: 8rem;
+				background-color: #f4f5f5;
 			}
 
 			.container {
 				background-color: rgba(255, 255, 255, 0.8);
-				padding: 4rem;
+				padding: 8rem;
+				padding-top: 9rem;
 				text-align: center;
 				margin: 0 auto;
+				background-image: url(./images/example/patterns.png);
+				background-repeat: repeat;
+				background-position: center;
+				background-size: contain;
 			}
 
+			.container a{
+				background: linear-gradient(40deg,#8b6bef,#f03b62);
+				font-size: 1.2rem;
+			}
 			h1 {
 				font-size: 54px;
 				font-weight: 900;
@@ -53,9 +63,20 @@
 				list-style: none;
 				padding: 0;
 				display: flex;
+
 				gap: 0.75rem;
 				justify-content: center;
 				margin-bottom: 4rem;
+			}
+
+			ul li{
+				display: flex;
+				align-items: center;
+				color: #aab2b8;
+			}
+
+			ul li img{
+				margin-right: 0.5rem;
 			}
 
 			.features li {
@@ -83,9 +104,9 @@
 				<h2>Unlimited downloads of 60+ million creative assets. From just €14.50/month.</h2>
 
 				<ul class="features">
-					<li>Stock Videos</li>
-					<li>Music</li>
-					<li>Photos & Graphics</li>
+					<li> <img src="./images/example/green-checkmark.svg" alt=""> Stock Videos</li>
+					<li><img src="./images/example/green-checkmark.svg" alt=""> Music</li>
+					<li><img src="./images/example/green-checkmark.svg" alt=""> Photos & Graphics</li>
 				</ul>
 
 				<a href="#" class="btn">Start 7-day free trial</a>

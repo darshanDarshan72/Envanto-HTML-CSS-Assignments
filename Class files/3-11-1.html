@@ -14,12 +14,96 @@
 
 		<style>
 			* {
+				padding: 0;
+				margin: 0;
 				box-sizing: border-box;
 			}
 
 			body {
 				font-family: 'Poppins', sans-serif;
 			}
+
+			.learn {
+			background-color: #f4f5f5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.learn .container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #ffff;
+			padding: 3rem;
+			/* width: 500px; */
+			box-shadow: 4px 4px 20px rgba(139, 139, 139, 0.3);
+		}
+
+		.learn .container h1{
+			font-size: 2.1rem;
+			font-weight: 800;
+			color: #132a3b;
+			padding-bottom: 1.8rem;
+			width: 350px;
+			text-align: center;
+		}
+
+		.learn .container h2{
+			font-size: 1.4rem;
+			color: #132a3b;
+			text-align: center;
+		}
+		.learn .container h2 span{
+			display: block;
+			font-size: 1rem;
+			font-weight: 300;
+			color: #a2abb2;
+			font-style: italic;
+		}
+
+		.learn .container hr{
+			background-color: #e7eaeb;
+			width: 100%;
+			height: 4px;
+			margin: 2rem 0;
+			border: none;
+			outline: none;
+		}
+
+		.learn .container ul{
+			list-style-type: none;
+			padding-left: 0px;
+			text-align: start;
+			width: 100%;
+		}
+
+		.learn .container ul li{
+			display: flex;
+			align-items: center;
+			color: #556772;
+		}
+
+		.learn .container ul li strong{
+			margin-right: 4px;
+		}
+
+		.learn .container ul li img{
+			margin-right: 0.7rem;
+		}
+
+		.learn .container button{
+			width: 100%;
+			padding: 1rem 3rem;
+			margin-top: 1.5rem;
+			border: none;
+			background-color: #475ac0;
+			color: #fcfcfe;
+			font-size: 1rem;
+			font-weight: 400;
+			border-radius: 6px;
+		}
+
 
 			.plan-features {
 				padding: 0;
@@ -34,20 +118,19 @@
 		<section class="learn">
 			<!-- Practice area start -->
 
-			<h1>Platinum</h1>
-			<h2>$45 <span>per month</span></h2>
-
-			<hr>
-
-			<ul class="plan-features">
-				<li><strong>Unlimited</strong> Websites</li>
-				<li><strong>20</strong> GB Web Space</li>
-				<li><strong>~ 100,000</strong> Visits Monthly</li>
-				<li><strong>Unmetered</strong> Traffic</li>
-				<li><strong>Free</strong> SSL</li>
-			</ul>
-
-			<button>Choose Plan</button>
+			<div class="container">
+				<h1>Platinum</h1>
+				<h2>$45 <span>per month</span></h2>
+				<hr>
+				<ul class="plan-features">
+					<li> <img src="./images/example/green-checkmark.svg" alt=""><strong>Unlimited</strong> Websites</li>
+					<li><img src="./images/example/green-checkmark.svg" alt=""><strong>20</strong> GB Web Space</li>
+					<li><img src="./images/example/green-checkmark.svg" alt=""><strong>~ 100,000</strong> Visits Monthly</li>
+					<li><img src="./images/example/green-checkmark.svg" alt=""><strong>Unmetered</strong> Traffic</li>
+					<li><img src="./images/example/green-checkmark.svg" alt=""><strong>Free</strong> SSL</li>
+				</ul>
+				<button>Choose Plan</button>
+			</div>
 
 			<!-- Practice area end -->
 		</section>

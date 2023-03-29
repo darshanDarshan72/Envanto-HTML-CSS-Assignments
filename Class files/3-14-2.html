@@ -14,6 +14,8 @@
 
 		<style>
 			* {
+				margin: 0;
+				padding: 0;
 				box-sizing: border-box;
 			}
 
@@ -26,6 +28,62 @@
 				padding: 4rem;
 			}
 
+			.learn header{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.learn header nav ul{
+				list-style: none;
+				display: flex;
+				align-items: center;
+			}
+
+			.learn header nav ul li{
+				margin: 0 1rem;
+			}
+
+			.learn header a{
+				display: flex;
+				align-items: center;
+			}
+
+			.learn header a img{
+				margin-left: 1rem;
+			}
+
+			.learn .hero{
+				display: flex;
+			}
+
+			.learn .hero .content{
+				width: 50%;
+			}
+
+			.learn .hero .content a{
+				display: flex;
+				align-items: center;
+				/* display: inline-block; */
+				width: fit-content;
+			}
+
+			.learn .hero .content a img{
+				height: 1rem;
+				width: 20%;
+				margin-left: 1rem;
+			}
+
+			.learn .hero .content a p{
+				/* display: block; */
+				/* width: fit-content; */
+				width: 80%;
+				white-space: nowrap;
+			}
+
+			.learn .hero img{
+				width: 50%;
+			}
 			h1 {
 				font-size: 3.375rem;
 				line-height: 1.33;
@@ -107,7 +165,7 @@
 					<h1>Create your digital wallet in just a few clicks.</h1>
 					<h2>Add your cards and pay with your phone everywhere. Convenience is the key.</h2>
 
-					<a href="" class="btn">Buy It Now <img src="images/example/arrow-right-white.svg" alt="Arrow right"></a>
+					<a href="" class="btn"><p>Buy It Now</p> <img src="images/example/arrow-right-white.svg" alt="Arrow right"></a>
 				</div>
 
 				<img src="images/example/illustration.svg" alt="illustration">

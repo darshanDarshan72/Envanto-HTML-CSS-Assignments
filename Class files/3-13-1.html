@@ -1,41 +1,93 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>HTML and CSS for Complete Beginners: Example 3-13-1</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+	<title>HTML and CSS for Complete Beginners: Example 3-13-1</title>
 
-		<style>
-			* {
-				box-sizing: border-box;
-			}
+	<!-- This CSS and font is purely for presentational purposes. -->
+	<link rel="stylesheet" href="css/presentation.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
 
-			body {
-				font-family: 'Poppins', sans-serif;
-			}
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-			.card {
-				border-radius: 16px;
-				width: 561px;
-				height: 297px;
-				margin-bottom: 2rem;
-			}
-		</style>
-	</head>
-	<body>
-		<section class="learn">
-			<!-- Practice area start -->
+		body {
+			font-family: 'Poppins', sans-serif;
+		}
 
+		.learn {
+			background-color: #f4f5f5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.learn .container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #ffff;
+			padding: 3rem;
+			/* width: 350px; */
+			box-shadow: 4px 4px 20px rgba(139, 139, 139, 0.3);
+		}
+
+		.learn .container .card {
+			border-radius: 16px;
+			width: 561px;
+			height: 297px;
+			margin-bottom: 2rem;
+			padding-left:280px;
+			padding-top: 70px;
+		}
+
+		.learn .container .card ul{
+			list-style-type: none;
+			display: flex;
+			margin-top: 1.5rem;
+
+		}
+
+		.learn .container .card ul li{
+			margin-right: 2rem;
+			
+		}
+
+		.learn .container .card ul li  p.title{
+			margin-bottom:0.8rem;
+			font-weight: 800;
+		}
+
+		#viking {
+			background-image: url(./images/example/bg-elephant.jpg);
+		}
+
+		#sorceress {
+			background-image: url(./images/example/bg-cat.jpg);
+		}
+
+		#fashionista {
+			background-image: url(./images/example/bg-bunny.jpg);
+		}
+	</style>
+</head>
+
+<body>
+	<section class="learn">
+		<!-- Practice area start -->
+
+		<div class="container">
 			<div class="card" id="viking">
-				<!-- <h2>The Viking</h2>
-
+				<h2>The Viking</h2>
 				<ul class="stats">
 					<li>
 						<p class="title">68%</p>
@@ -45,24 +97,52 @@
 						<p class="title">522</p>
 						<p>Games Played</p>
 					</li>
-				</ul> -->
+				</ul>
 			</div>
+			<div class="card" id="sorceress">
+				<h2>The Viking</h2>
+				<ul class="stats">
+					<li>
+						<p class="title">68%</p>
+						<p>Win Rate</p>
+					</li>
+					<li>
+						<p class="title">522</p>
+						<p>Games Played</p>
+					</li>
+				</ul>
+			</div>
+			<div class="card" id="fashionista">
+				<h2>The Viking</h2>
+				<ul class="stats">
+					<li>
+						<p class="title">68%</p>
+						<p>Win Rate</p>
+					</li>
+					<li>
+						<p class="title">522</p>
+						<p>Games Played</p>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-			<div class="card" id="sorceress"></div>
 
-			<div class="card" id="fashionista"></div>
+		<!-- Practice area end -->
+	</section>
 
-			<!-- Practice area end -->
-		</section>
+	<section class="preview" data-content="Lesson 3-13: Styling Backgrounds in CSS">
+		<img width="720px" src="images/reference/characters.png" alt="Reference image" />
+		<p>
+			Graphics from Envato Elements: <br><br>
+			<a href="https://elements.envato.com/elephant-character-illustration-EABS3JK" target="_blank">Elephant
+				Character Illustration</a><br>
+			<a href="https://elements.envato.com/cute-cat-character-illustration-6X93TJY" target="_blank">Cute Cat
+				Character Illustration</a><br>
+			<a href="https://elements.envato.com/cute-bunny-illustration-D85GZDJ" target="_blank">Cute Bunny
+				Illustration</a>
+		</p>
+	</section>
+</body>
 
-		<section class="preview" data-content="Lesson 3-13: Styling Backgrounds in CSS">
-			<img width="720px" src="images/reference/characters.png" alt="Reference image" />
-			<p>
-				Graphics from Envato Elements: <br><br>
-				<a href="https://elements.envato.com/elephant-character-illustration-EABS3JK" target="_blank">Elephant Character Illustration</a><br>
-				<a href="https://elements.envato.com/cute-cat-character-illustration-6X93TJY" target="_blank">Cute Cat Character Illustration</a><br>
-				<a href="https://elements.envato.com/cute-bunny-illustration-D85GZDJ" target="_blank">Cute Bunny Illustration</a>
-			</p>
-		</section>
-	</body>
 </html>

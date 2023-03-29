@@ -99,6 +99,33 @@
 			.hero img {
 				max-width: 100%;
 			}
+
+			@media screen and (max-width:768px) {
+
+				.learn header nav{
+					display: none;
+
+				}
+
+				.learn header .btn{
+					display: none;
+				}
+
+				.hero 
+				{
+					grid-template-columns: 1fr;
+					gap: 2rem;
+				}
+
+				.hero .content{
+					order: 2;
+				}
+
+				.hero img{
+					order: 1;
+				}
+				
+			}
 		</style>
 	</head>
 	<body class="flip">
