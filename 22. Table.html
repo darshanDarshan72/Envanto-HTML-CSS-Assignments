@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners: Example 2-12</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Poppins", sans-serif;
+		}
+
+		.learn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #f4f5f5;
+		}
+
+		.container {
+			background-color: #fff;
+			width:850px;
+			padding: 3rem;
+			box-shadow: 4px 4px 20px rgba(139, 139, 139, 0.3);
+			display: flex;
+			flex-direction: column;
+		}
+
+		.container h1{
+			font-size: 2rem;
+			font-weight: 800;
+			color: #132a3b;
+			margin-bottom: 1.4rem;
+		}
+
+		table{
+			border-collapse: collapse;
+			border-radius: 7px;
+			overflow: hidden;
+		}	
+
+		table tbody tr td button{
+			padding: 0.5rem 1rem;
+			border-radius: 40px;
+			font-weight: 700;
+			border: none;
+		}
+
+		.processing{
+			color: #219bf4;
+			background-color: #d4edff;
+		}
+
+		.success{
+			color: #4bb419;
+			background-color: #e2f9dd;
+		}
+
+		.reverted{
+			color: #f5512e;
+			background-color: #ffd4d4;
+		}
+
+		
+		.container table thead{
+			background-color: #132a3b;
+			color: #aab2b8;
+			border-top-right-radius: 10px;
+			overflow: hidden;
+		}
+
+		.container table tfoot{
+			background-color: #f3f4f5;
+			color: #405260;
+		}
+
+		tbody tr,tfoot tr{
+			border: 1px solid #ccc;
+		}
+
+
+
+		td,th{
+			padding: 1.4rem;
+		}
+
+		th{
+			border-color: #132a3b;
+			border-left: 5px solid #132a3b;
+			border-right: 5px solid #132a3b;
+		}
+
+		#left{
+			border-left: none;
+		}
+
+		#right
+		{
+			border-right: none;
+		}
+		</style>
+	</head>
+
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<div class="container">
+				<h1>Payouts</h1>
+				<table>
+					<thead>
+						<tr>
+							<th id="left">PAYEE</th>
+							<th>AMOUNT</th>
+							<th>DATE</th>
+							<th id="right">STATUS</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<b>John Wick</b> <br>
+								Shoota Inc
+							</td>
+							<td>
+								$42,272.23
+							</td>
+							<td>
+								Jan 13, 2022
+							</td>
+							<td>
+								<button class="processing">
+									Processing
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b>Willem Dafoe</b> <br>
+								Spider Inc
+							</td>
+							<td>
+								$27,221.00
+							</td>
+							<td>
+								Dec 07,2021
+							</td>
+							<td>
+								<button class="success">
+									Success
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b>Chuck Norris</b> <br>
+								Roundhouse Inc
+							</td>
+							<td>
+								$6,982.00
+							</td>
+							<td>
+								Oct 20,2021
+							</td>
+							<td>
+								<button class="success">
+									Success
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b>Nick Cage</b> <br>
+								Convicts Inc
+							</td>
+							<td>
+								$13,821.72
+							</td>
+							<td>
+								Oct 14, 2021
+							</td>
+							<td>
+								<button class="reverted">
+									Reverted
+								</button>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>Total Paid</td>
+							<td colspan="3">$90,296.95</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="lesson 2-12: Displaying Tabular Data with Tables">
+			<img width="903" src="images/reference/table.png" alt="Reference image" />
+		</section>
+	</body>
+</html>
