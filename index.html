@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envanto Trust++ Assignments HTML & CSS</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header{
+            display: flex;
+            justify-content:space-between;
+            padding: 1.3rem 2rem;
+            align-items: center;
+            box-shadow: 2px 0px 10px rgba(136, 132, 132, 0.3);
+            font-size: 1.3rem;
+            color: #132a3b;
+            font-weight: 700;
+            background-color: #f7f7f7;
+        }
+
+        header .logo{
+            display: flex;
+            align-items: center;
+        }
+        header .logo img{
+            width: 150px;
+        }
+
+        header nav ul{
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav ul li a{
+            text-decoration: none;
+            color: #132a3b;
+        }
+
+        .container {
+            /* width: 100%; */
+            /* height: 100%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .container .card {
+            width: 30%;
+            /* border: 1px solid black; */
+            /* padding: 2rem; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container .card img{
+            width: 100%;
+        }
+
+        /* #dash {
+            width: 64%;
+        }
+
+        #login {
+            width: 30%;
+        }
+
+        #hero-desktop {
+            width: 70%
+        }
+
+        #hero-mobile {
+            width: 24%;
+        } */
+
+        /* #header {
+            width: 98%;
+        } */
+
+        /* #header .img img {
+            width: 100%;
+            height: fit-content;
+        } */
+
+        .card .img img {
+            /* height: 400px; */
+            /* height: 100%; */
+            /* aspect-ratio: 1/auto; */
+            object-fit: contain;
+
+        }
+
+        @media screen and (max-width:769px) {
+            .container .card {
+                width: 100%;
+            }
+
+            #dash {
+                width: 100%;
+            }
+
+
+            #login {
+                width: 100%;
+            }
+
+            #hero-desktop {
+                width: 100%
+            }
+
+            #hero-desktop img{
+                width: 100%;
+            }
+
+            #hero-mobile {
+                width: 100%;
+            }
+
+            #hero-mobile img{
+                width: 100%;
+            }
+
+            #header {
+                width: 100%;
+            }
+
+            #header .img img {
+                width: 100%;
+                height: fit-content;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+
+            <img src="./images/reference/envanto.png" alt=""> Assigmnets in HTML & CSS
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="img">
+
+                <a href="./7. Address.html">
+                    <img src="./images/reference/address.png" alt="">
+                </a>
+            </div>
+            <div class="title">
+                    <h3>Address Component</h3>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+
+                <a href="./18. Pricing-Plan.html">
+                    <img src="./images/reference/pricing-plan.png" alt="">
+                </a>
+            </div>
+            <div class="title">
+                <h3>Pricing-Plan Component</h3>
+            </div>
+        </div>
+        
+
+        <div class="card" id="login">
+            <div class="img">
+                <a href="./14. Login-Form.html">
+                
+                    <img src="./images/reference/login-form.png" alt="">
+                 </a>
+            </div>
+            <div class="title">
+                <h3>Login-Form Component</h3>
+            </div>
+        </div>
+
+        
+
+        <div class="card" id="header">
+            <div class="img">
+                
+                <a href="./11. Header.html">
+                    <img src="./images/reference/header.png" alt="">
+                </a>
+
+            </div>
+            <div class="title">
+                <h3>Header Component</h3>
+            </div>
+        </div>
+
+        <div class="card" id="hero-desktop">
+            <div class="img">
+                <a href="./12. Hero-Desktop.html">
+                <img src="./images/reference/hero-desktop.png" alt="">
+            </a>
+            </div>
+            <div class="title">
+                <h3>Hero-Desktop Component</h3>
+            </div>
+        </div>
+
+        <div class="card" id="dash">
+            <div class="img">
+                <a href="./10. Dashboard.html">
+                <img src="./images/reference/dashboard.png" alt="">
+            </a>
+            </div>
+            <div class="title">
+                <h3>Dashboard Component</h3>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="img">
+                
+                <a href="./9. Contact-Form.html"><img src="./images/reference/contact-form.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h3>Contact-Form Component</h3>
+            </div>
+        </div>
+        
+        
+
+
+
+        <div class="card" id="hero-mobile">
+            <div class="img">
+                <a href="./13. Hero-Mobile.html"><img src="./images/reference/hero-mobile.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h3>Hero-Mobile Component</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <a href="./8. Characters.html"><img src="./images/reference/characters.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h3>Characters Component</h3>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="img">
+                <a href="./16. Order-Form.html"><img src="./images/reference/order-form.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h3>Order-Form Component</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <a href="./21. Register-Form.html"><img src="./images/reference/register-form.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h3>Register-Form Component</h3>
+            </div>
+        </div>
+
+        
+
+       
+
+        <div class="card">
+            <div class="img">
+                <a href="./19. Real-Estate-Statistics.html"><img src="./images/reference/real-estate-statistics.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h3>Statistics Component</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <a href="./22. Table.html"><img src="./images/reference/table.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h3>Table Component</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <a href="./23. Todo.html"><img src="./images/reference/todo.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h3>Todo Component</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <a href="17. Patterns.html"><img src="./images/reference/patterns.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h3>Patterns Component</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <a href="./20. Recipe.html"><img src="./images/reference/recipe.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h3>Recipe Component</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <a href="./15. Meun.html"><img src="./images/reference/menu.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h3>Menu Component</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
