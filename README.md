@@ -1,2 +1,18 @@
 # Envanto-Trust-HTML-CSS-Assignments
 This repository contains simple assignments using HTML &amp; CSS covered in Envanto Trust++ HTML &amp; CSS For Beginers Course (https://youtu.be/iG2jotQo9NI)
+
+![alt text](./images/reference/address.png)
+![alt text](./images/reference/pricing-plan.png)
+![alt text](./images/reference/login-form.png)
+![alt text](./images/reference/contact-form.png)
+![alt text](./images/reference/hero-desktop.png)
+![alt text](./images/reference/hero-mobile.png)
+![alt text](./images/reference/characters.png)
+![alt text](./images/reference/order-form.png)
+![alt text](./images/reference/register-form.png)
+![alt text](./images/reference/real-estate-statistics.png)
+![alt text](./images/reference/table.png)
+![alt text](./images/reference/todo.png)
+![alt text](./images/reference/patterns.png)
+![alt text](./images/reference/recipe.png)
+![alt text](./images/reference/menu.png)
